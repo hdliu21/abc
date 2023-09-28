@@ -89,6 +89,9 @@ ifndef ABC_USE_NO_READLINE
   $(info $(MSG_PREFIX)Using libreadline)
 endif
 
+CFLAGS += -I/home/hdliu21/anaconda3/envs/amulet/include
+LDFLAGS += -L/home/hdliu21/anaconda3/envs/amulet/lib
+
 # whether to compile with thread support
 ifndef ABC_USE_NO_PTHREADS
   CFLAGS += -DABC_USE_PTHREADS
